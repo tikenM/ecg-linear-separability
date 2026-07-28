@@ -1,0 +1,70 @@
+{
+  "comment": "Graph feature computational cost versus marginal benefit",
+  "window_beats": 16,
+  "full_weighted_f1_cv": 0.7744,
+  "leave_one_out_delta_wf1": {
+    "drop_time": -0.005,
+    "drop_freq": -0.0789,
+    "drop_morph": 0.0068,
+    "drop_wavelet": -0.0369,
+    "drop_hrv": -0.0752,
+    "drop_graph": -0.0349
+  },
+  "graph_marginal_over_hrv": {
+    "cfg_full_wf1": 0.7743632849492281,
+    "cfg_hrv_no_graph_wf1": 0.7395045942504839,
+    "cfg_no_hrv_no_graph_wf1": 0.6690894534221326,
+    "marginal_graph_given_hrv": 0.0349,
+    "rhythm_from_hrv_alone": 0.0704
+  },
+  "per_family_ms": {
+    "time": 0.52088,
+    "freq": 0.13725,
+    "morph": 0.63161,
+    "wavelet": 0.04494,
+    "hrv": 0.0,
+    "graph": 0.55743
+  },
+  "cost_benefit": {
+    "total_ms_per_beat": 1.8921100000000002,
+    "families": {
+      "time": {
+        "benefit_wf1_from_including": 0.005,
+        "ms_per_beat": 0.52088,
+        "pct_of_total_time": 27.5,
+        "benefit_per_ms": 0.0096
+      },
+      "freq": {
+        "benefit_wf1_from_including": 0.0789,
+        "ms_per_beat": 0.13725,
+        "pct_of_total_time": 7.3,
+        "benefit_per_ms": 0.57486
+      },
+      "morph": {
+        "benefit_wf1_from_including": -0.0068,
+        "ms_per_beat": 0.63161,
+        "pct_of_total_time": 33.4,
+        "benefit_per_ms": -0.01077
+      },
+      "wavelet": {
+        "benefit_wf1_from_including": 0.0369,
+        "ms_per_beat": 0.04494,
+        "pct_of_total_time": 2.4,
+        "benefit_per_ms": 0.82109
+      },
+      "hrv": {
+        "benefit_wf1_from_including": 0.0752,
+        "ms_per_beat": 0.0,
+        "pct_of_total_time": 0.0,
+        "benefit_per_ms": null
+      },
+      "graph": {
+        "benefit_wf1_from_including": 0.0349,
+        "ms_per_beat": 0.55743,
+        "pct_of_total_time": 29.5,
+        "benefit_per_ms": 0.06261
+      }
+    }
+  },
+  "interpretation": "The leave-one-out \u0394 for graph (\u22120.035) confounds graph with the cheaper HRV/RR statistics.  marginal_graph_given_hrv isolates the true incremental value of the graph stream once HRV is already present.  When that marginal is small relative to the ~29 % of the feature budget consumed by graph at W=16, the deployable configuration should drop the graph family."
+}

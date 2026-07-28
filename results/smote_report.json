@@ -1,0 +1,298 @@
+{
+  "single_split": {
+    "n_before": 51002,
+    "before": {
+      "F": 414,
+      "N": 45848,
+      "Q": 8,
+      "S": 944,
+      "V": 3788
+    },
+    "branch": "SMOTE_ENN",
+    "reason": "rarest class has 8 sample(s) (>=2); k_neighbors=5",
+    "k_neighbors_used": 5,
+    "after_smote": {
+      "F": 45848,
+      "N": 45848,
+      "Q": 45848,
+      "S": 45848,
+      "V": 45848
+    },
+    "n_after_smote": 229240,
+    "after_enn": {
+      "F": 45848,
+      "N": 43750,
+      "Q": 45848,
+      "S": 45844,
+      "V": 45840
+    },
+    "final": {
+      "F": 45848,
+      "N": 43750,
+      "Q": 45848,
+      "S": 45844,
+      "V": 45840
+    },
+    "n_final": 227130
+  },
+  "per_fold": {
+    "n_folds": 5,
+    "folds": [
+      {
+        "n_before": 41383,
+        "before": {
+          "F": 413,
+          "N": 37268,
+          "Q": 8,
+          "S": 833,
+          "V": 2861
+        },
+        "branch": "SMOTE_ENN",
+        "reason": "rarest class has 8 sample(s) (>=2); k_neighbors=5",
+        "k_neighbors_used": 5,
+        "after_smote": {
+          "F": 37268,
+          "N": 37268,
+          "Q": 37268,
+          "S": 37268,
+          "V": 37268
+        },
+        "n_after_smote": 186340,
+        "after_enn": {
+          "F": 37268,
+          "N": 35326,
+          "Q": 37268,
+          "S": 37263,
+          "V": 37264
+        },
+        "final": {
+          "F": 37268,
+          "N": 35326,
+          "Q": 37268,
+          "S": 37263,
+          "V": 37264
+        },
+        "n_final": 184389,
+        "fold": 0
+      },
+      {
+        "n_before": 41404,
+        "before": {
+          "F": 414,
+          "N": 36640,
+          "Q": 6,
+          "S": 558,
+          "V": 3786
+        },
+        "branch": "SMOTE_ENN",
+        "reason": "rarest class has 6 sample(s) (>=2); k_neighbors=5",
+        "k_neighbors_used": 5,
+        "after_smote": {
+          "F": 36640,
+          "N": 36640,
+          "Q": 36640,
+          "S": 36640,
+          "V": 36640
+        },
+        "n_after_smote": 183200,
+        "after_enn": {
+          "F": 36640,
+          "N": 35250,
+          "Q": 36640,
+          "S": 36638,
+          "V": 36631
+        },
+        "final": {
+          "F": 36640,
+          "N": 35250,
+          "Q": 36640,
+          "S": 36638,
+          "V": 36631
+        },
+        "n_final": 181799,
+        "fold": 1
+      },
+      {
+        "n_before": 39823,
+        "before": {
+          "F": 405,
+          "N": 35762,
+          "Q": 4,
+          "S": 926,
+          "V": 2726
+        },
+        "branch": "SMOTE_ENN",
+        "reason": "rarest class has 4 sample(s) (>=2); k_neighbors=3",
+        "k_neighbors_used": 3,
+        "after_smote": {
+          "F": 35762,
+          "N": 35762,
+          "Q": 35762,
+          "S": 35762,
+          "V": 35762
+        },
+        "n_after_smote": 178810,
+        "after_enn": {
+          "F": 35762,
+          "N": 34412,
+          "Q": 35762,
+          "S": 35760,
+          "V": 35758
+        },
+        "final": {
+          "F": 35762,
+          "N": 34412,
+          "Q": 35762,
+          "S": 35760,
+          "V": 35758
+        },
+        "n_final": 177454,
+        "fold": 2
+      },
+      {
+        "n_before": 39895,
+        "before": {
+          "F": 37,
+          "N": 36288,
+          "Q": 6,
+          "S": 815,
+          "V": 2749
+        },
+        "branch": "SMOTE_ENN",
+        "reason": "rarest class has 6 sample(s) (>=2); k_neighbors=5",
+        "k_neighbors_used": 5,
+        "after_smote": {
+          "F": 36288,
+          "N": 36288,
+          "Q": 36288,
+          "S": 36288,
+          "V": 36288
+        },
+        "n_after_smote": 181440,
+        "after_enn": {
+          "F": 36288,
+          "N": 34495,
+          "Q": 36288,
+          "S": 36281,
+          "V": 36282
+        },
+        "final": {
+          "F": 36288,
+          "N": 34495,
+          "Q": 36288,
+          "S": 36281,
+          "V": 36282
+        },
+        "n_final": 179634,
+        "fold": 3
+      },
+      {
+        "n_before": 41503,
+        "before": {
+          "F": 387,
+          "N": 37434,
+          "Q": 8,
+          "S": 644,
+          "V": 3030
+        },
+        "branch": "SMOTE_ENN",
+        "reason": "rarest class has 8 sample(s) (>=2); k_neighbors=5",
+        "k_neighbors_used": 5,
+        "after_smote": {
+          "F": 37434,
+          "N": 37434,
+          "Q": 37434,
+          "S": 37434,
+          "V": 37434
+        },
+        "n_after_smote": 187170,
+        "after_enn": {
+          "F": 37434,
+          "N": 36043,
+          "Q": 37434,
+          "S": 37433,
+          "V": 37431
+        },
+        "final": {
+          "F": 37434,
+          "N": 36043,
+          "Q": 37434,
+          "S": 37433,
+          "V": 37431
+        },
+        "n_final": 185775,
+        "fold": 4
+      }
+    ],
+    "aggregate_by_class": {
+      "F": {
+        "before_min_median_max": [
+          37,
+          405,
+          414
+        ],
+        "final_min_median_max": [
+          35762,
+          36640,
+          37434
+        ]
+      },
+      "N": {
+        "before_min_median_max": [
+          35762,
+          36640,
+          37434
+        ],
+        "final_min_median_max": [
+          34412,
+          35250,
+          36043
+        ]
+      },
+      "Q": {
+        "before_min_median_max": [
+          4,
+          6,
+          8
+        ],
+        "final_min_median_max": [
+          35762,
+          36640,
+          37434
+        ]
+      },
+      "S": {
+        "before_min_median_max": [
+          558,
+          815,
+          926
+        ],
+        "final_min_median_max": [
+          35760,
+          36638,
+          37433
+        ]
+      },
+      "V": {
+        "before_min_median_max": [
+          2726,
+          2861,
+          3786
+        ],
+        "final_min_median_max": [
+          35758,
+          36631,
+          37431
+        ]
+      }
+    },
+    "branch_per_fold": [
+      "SMOTE_ENN",
+      "SMOTE_ENN",
+      "SMOTE_ENN",
+      "SMOTE_ENN",
+      "SMOTE_ENN"
+    ],
+    "note": "If 'branch_per_fold' is not uniformly 'SMOTE_ENN', at least one fold fell back to plain oversampling because its rarest class had <2 samples; report that explicitly rather than averaging over it."
+  }
+}

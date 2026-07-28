@@ -1,0 +1,32 @@
+{
+  "comment": "Reference peaks vs automatically detected peaks",
+  "protocol": {
+    "matching_window_ms": 150,
+    "matching_rule": "one-to-one nearest within tolerance (AAMI EC57)",
+    "steps": [
+      "Run ensemble detector on each test record \u2192 det_peaks",
+      "score_detection(ref, det, fs) \u2192 Se / +P / F1",
+      "transfer_labels(ref, ref_AAMI, det, tol) \u2192 det_labels",
+      "Rebuild BeatSet from det_peaks + det_labels (drop '')",
+      "Re-run identical inter-patient pipeline on the new BeatSet",
+      "Report \u0394-acc / \u0394-wF1 relative to reference-peak Table 2 numbers"
+    ]
+  },
+  "synthetic_demo": {
+    "detection": {
+      "tol_ms": 150.0,
+      "tol_samples": 54,
+      "tp": 38,
+      "fp": 3,
+      "fn": 2,
+      "n_ref": 40,
+      "n_det": 41,
+      "sensitivity": 0.95,
+      "positive_predictivity": 0.9268,
+      "f1": 0.9383
+    },
+    "n_matched_with_label": 38,
+    "n_spurious_discarded": 3
+  },
+  "manuscript_paragraph_template": "All classification numbers in the main tables use the reference annotations, as is standard for the AAMI inter-patient benchmark. To quantify the practical impact of automatic detection we evaluated the ensemble R-peak detector under the AAMI EC57 matching criterion (150 ms) and then re-ran the entire feature-extraction + linear-SVC pipeline on the detected peaks with labels transferred by nearest-neighbour matching.  Detector sensitivity / positive predictivity on the DS2 records were Se = <fill>, +P = <fill>.  The resulting classification weighted-F1 differed from the reference-peak figure by \u0394 = <fill> (Table Y).  The gap is dominated by the small fraction of spurious detections that receive no label and are therefore discarded; once a peak is matched the downstream classifier performance is essentially unchanged."
+}
