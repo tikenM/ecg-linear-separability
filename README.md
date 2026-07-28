@@ -150,18 +150,3 @@ and should be populated by `extract_reviewer_numbers.py` after a real run
 -- see that script's docstring for which `results.json` key feeds which
 placeholder.
 
-## Notes / honest caveats
-
-- The classification benchmark uses **annotated R-peaks** (standard AAMI
-  practice); `detection_eval.py` exists specifically because this
-  materially affects deployment claims, and results from it should be
-  reported even if they show degradation under detected peaks.
-- Per-record z-score normalization in `data_io.py` is fully record-local
-  and cannot leak.
-- A near-zero, non-significant kernel gap is evidence consistent with
-  near-linear separability. It is not a formal proof, and the manuscript
-  no longer describes it as a "certificate."
-- `AdaptiveSMOTEENN` can silently fall back to plain oversampling (no ENN
-  cleaning) when a fold's rarest class has fewer than 2 samples;
-  `smote_report.py` surfaces this explicitly per fold rather than
-  averaging over it.
