@@ -1,6 +1,6 @@
 # ECG-XAI: Interpretable, Resource-Efficient Arrhythmia Detection
 
-Hybrid feature-engineering pipeline for inter-patient ECG arrhythmia classification.  
+"Hybrid Feature Engineering for Resource-Efficient Arrhythmia Detection in Electrocardiogram Signals"
 The framework combines time-domain, frequency-domain, morphological, wavelet, HRV, and causal graph-theoretic features with a linear classifier under a strict leakage-controlled evaluation protocol.
 
 ## Installation
